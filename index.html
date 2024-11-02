@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Clothing Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products">
+            <h2>Products</h2>
+            <div class="product" data-id="1" data-name="Stylish T-Shirt" data-price="19.99">
+                <img src="https://via.placeholder.com/150" alt="Stylish T-Shirt">
+                <h3>Stylish T-Shirt</h3>
+                <p>Comfortable and stylish t-shirt made from 100% cotton.</p>
+                <p class="price">$19.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2" data-name="Casual Jeans" data-price="39.99">
+                <img src="https://via.placeholder.com/150" alt="Casual Jeans">
+                <h3>Casual Jeans</h3>
+                <p>Trendy jeans with a comfortable fit.</p>
+                <p class="price">$39.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </section>
+
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p id="total-price">Total: $0.00</p>
+            <button id="checkout">Checkout</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Clothing Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
